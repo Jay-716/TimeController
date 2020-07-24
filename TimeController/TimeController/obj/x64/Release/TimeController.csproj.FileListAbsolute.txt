@@ -1,9 +1,0 @@
-G:\TimeController\TimeController\bin\x64\Release\TimeController.exe.config
-G:\TimeController\TimeController\bin\x64\Release\TimeController.exe
-G:\TimeController\TimeController\bin\x64\Release\TimeController.pdb
-G:\TimeController\TimeController\obj\x64\Release\TimeController.FormTimeController.resources
-G:\TimeController\TimeController\obj\x64\Release\TimeController.Properties.Resources.resources
-G:\TimeController\TimeController\obj\x64\Release\TimeController.csproj.GenerateResource.cache
-G:\TimeController\TimeController\obj\x64\Release\TimeController.csproj.CoreCompileInputs.cache
-G:\TimeController\TimeController\obj\x64\Release\TimeController.exe
-G:\TimeController\TimeController\obj\x64\Release\TimeController.pdb

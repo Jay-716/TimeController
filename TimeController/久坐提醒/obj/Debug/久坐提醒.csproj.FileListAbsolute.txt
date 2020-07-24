@@ -1,5 +1,0 @@
-G:\TimeController\久坐提醒\obj\Debug\久坐提醒.csprojAssemblyReference.cache
-G:\TimeController\久坐提醒\obj\Debug\久坐提醒.Form1.resources
-G:\TimeController\久坐提醒\obj\Debug\久坐提醒.csproj.GenerateResource.cache
-G:\TimeController\久坐提醒\obj\Debug\久坐提醒.csproj.CoreCompileInputs.cache
-G:\TimeController\久坐提醒\obj\Debug\久坐提醒.Properties.Resources.resources
