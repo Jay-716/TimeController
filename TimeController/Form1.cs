@@ -24,7 +24,7 @@ namespace TimeController {
             this.NextTime = DateTime.Now.AddMinutes(Convert.ToDouble(this.domainUpDownInterval.Text));
             if(Convert.ToDouble(this.domainUpDownInterval.Text) <= 0) {
                 MessageBox.Show("Invalid Time", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.domainUpDownInterval.Text = "35";
+                this.domainUpDownInterval.Text = "45";
             }
             this.notifyIcon.Icon = SystemIcons.Warning;
             this.notifyIcon.BalloonTipTitle = this.textBoxTitle.Text;
@@ -47,6 +47,8 @@ namespace TimeController {
                         Thread.Sleep(10000);
                         LockWorkStation();
                     })).Start();
+                } else {
+                    MessageBox.Show("Have a rest!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             this.notifyIcon.Text = lastTime.ToString().Substring(0, 8) + " (hh:mm:ss)";

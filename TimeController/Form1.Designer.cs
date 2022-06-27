@@ -35,8 +35,8 @@
             this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItemLastTimeTitle = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItemLastTime = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItemPutOff = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemExit = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip.SuspendLayout();
@@ -46,9 +46,10 @@
             // 
             this.labelInterval.AutoSize = true;
             this.labelInterval.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelInterval.Location = new System.Drawing.Point(9, 9);
+            this.labelInterval.Location = new System.Drawing.Point(14, 14);
+            this.labelInterval.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelInterval.Name = "labelInterval";
-            this.labelInterval.Size = new System.Drawing.Size(65, 20);
+            this.labelInterval.Size = new System.Drawing.Size(96, 28);
             this.labelInterval.TabIndex = 0;
             this.labelInterval.Text = "提醒间隔";
             // 
@@ -56,9 +57,10 @@
             // 
             this.labelTitle.AutoSize = true;
             this.labelTitle.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelTitle.Location = new System.Drawing.Point(9, 40);
+            this.labelTitle.Location = new System.Drawing.Point(14, 60);
+            this.labelTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(65, 20);
+            this.labelTitle.Size = new System.Drawing.Size(96, 28);
             this.labelTitle.TabIndex = 1;
             this.labelTitle.Text = "提醒标题";
             // 
@@ -66,36 +68,40 @@
             // 
             this.labelMainText.AutoSize = true;
             this.labelMainText.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelMainText.Location = new System.Drawing.Point(9, 70);
+            this.labelMainText.Location = new System.Drawing.Point(14, 105);
+            this.labelMainText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelMainText.Name = "labelMainText";
-            this.labelMainText.Size = new System.Drawing.Size(65, 20);
+            this.labelMainText.Size = new System.Drawing.Size(96, 28);
             this.labelMainText.TabIndex = 2;
             this.labelMainText.Text = "提醒内容";
             // 
             // domainUpDownInterval
             // 
             this.domainUpDownInterval.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.domainUpDownInterval.Location = new System.Drawing.Point(164, 8);
+            this.domainUpDownInterval.Location = new System.Drawing.Point(246, 12);
+            this.domainUpDownInterval.Margin = new System.Windows.Forms.Padding(4);
             this.domainUpDownInterval.Name = "domainUpDownInterval";
-            this.domainUpDownInterval.Size = new System.Drawing.Size(56, 22);
+            this.domainUpDownInterval.Size = new System.Drawing.Size(84, 29);
             this.domainUpDownInterval.TabIndex = 3;
-            this.domainUpDownInterval.Text = "35";
+            this.domainUpDownInterval.Text = "45";
             // 
             // textBoxTitle
             // 
             this.textBoxTitle.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBoxTitle.Location = new System.Drawing.Point(80, 40);
+            this.textBoxTitle.Location = new System.Drawing.Point(120, 60);
+            this.textBoxTitle.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTitle.Name = "textBoxTitle";
-            this.textBoxTitle.Size = new System.Drawing.Size(140, 23);
+            this.textBoxTitle.Size = new System.Drawing.Size(208, 31);
             this.textBoxTitle.TabIndex = 4;
             this.textBoxTitle.Text = " 久坐提醒";
             // 
             // textBoxMainText
             // 
             this.textBoxMainText.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBoxMainText.Location = new System.Drawing.Point(80, 69);
+            this.textBoxMainText.Location = new System.Drawing.Point(120, 104);
+            this.textBoxMainText.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxMainText.Name = "textBoxMainText";
-            this.textBoxMainText.Size = new System.Drawing.Size(140, 23);
+            this.textBoxMainText.Size = new System.Drawing.Size(208, 31);
             this.textBoxMainText.TabIndex = 5;
             this.textBoxMainText.Text = " 久坐提醒";
             // 
@@ -103,9 +109,10 @@
             // 
             this.checkBoxAutoLock.AutoSize = true;
             this.checkBoxAutoLock.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBoxAutoLock.Location = new System.Drawing.Point(13, 102);
+            this.checkBoxAutoLock.Location = new System.Drawing.Point(20, 153);
+            this.checkBoxAutoLock.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxAutoLock.Name = "checkBoxAutoLock";
-            this.checkBoxAutoLock.Size = new System.Drawing.Size(75, 21);
+            this.checkBoxAutoLock.Size = new System.Drawing.Size(108, 28);
             this.checkBoxAutoLock.TabIndex = 6;
             this.checkBoxAutoLock.Text = "自动锁定";
             this.checkBoxAutoLock.UseVisualStyleBackColor = true;
@@ -113,9 +120,10 @@
             // buttonStart
             // 
             this.buttonStart.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonStart.Location = new System.Drawing.Point(145, 102);
+            this.buttonStart.Location = new System.Drawing.Point(218, 153);
+            this.buttonStart.Margin = new System.Windows.Forms.Padding(4);
             this.buttonStart.Name = "buttonStart";
-            this.buttonStart.Size = new System.Drawing.Size(75, 23);
+            this.buttonStart.Size = new System.Drawing.Size(112, 34);
             this.buttonStart.TabIndex = 7;
             this.buttonStart.Text = "确定";
             this.buttonStart.UseVisualStyleBackColor = true;
@@ -131,6 +139,7 @@
             // 
             // contextMenuStrip
             // 
+            this.contextMenuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.contextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItemLastTimeTitle,
             this.toolStripMenuItemLastTime,
@@ -138,46 +147,46 @@
             this.toolStripMenuItemPutOff,
             this.toolStripMenuItemExit});
             this.contextMenuStrip.Name = "contextMenuStrip";
-            this.contextMenuStrip.Size = new System.Drawing.Size(191, 98);
+            this.contextMenuStrip.Size = new System.Drawing.Size(252, 130);
             // 
             // toolStripMenuItemLastTimeTitle
             // 
             this.toolStripMenuItemLastTimeTitle.Enabled = false;
             this.toolStripMenuItemLastTimeTitle.Name = "toolStripMenuItemLastTimeTitle";
-            this.toolStripMenuItemLastTimeTitle.Size = new System.Drawing.Size(190, 22);
+            this.toolStripMenuItemLastTimeTitle.Size = new System.Drawing.Size(251, 30);
             this.toolStripMenuItemLastTimeTitle.Text = "Last Time:";
-            // 
-            // toolStripSeparator
-            // 
-            this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(187, 6);
             // 
             // toolStripMenuItemLastTime
             // 
             this.toolStripMenuItemLastTime.Enabled = false;
             this.toolStripMenuItemLastTime.Name = "toolStripMenuItemLastTime";
-            this.toolStripMenuItemLastTime.Size = new System.Drawing.Size(190, 22);
+            this.toolStripMenuItemLastTime.Size = new System.Drawing.Size(251, 30);
             this.toolStripMenuItemLastTime.Text = "00:00:00 (hh:mm:ss)";
+            // 
+            // toolStripSeparator
+            // 
+            this.toolStripSeparator.Name = "toolStripSeparator";
+            this.toolStripSeparator.Size = new System.Drawing.Size(248, 6);
             // 
             // toolStripMenuItemPutOff
             // 
             this.toolStripMenuItemPutOff.Name = "toolStripMenuItemPutOff";
-            this.toolStripMenuItemPutOff.Size = new System.Drawing.Size(190, 22);
+            this.toolStripMenuItemPutOff.Size = new System.Drawing.Size(251, 30);
             this.toolStripMenuItemPutOff.Text = "Put Off";
             this.toolStripMenuItemPutOff.Click += new System.EventHandler(this.toolStripMenuItemPutOff_Click);
             // 
             // toolStripMenuItemExit
             // 
             this.toolStripMenuItemExit.Name = "toolStripMenuItemExit";
-            this.toolStripMenuItemExit.Size = new System.Drawing.Size(190, 22);
+            this.toolStripMenuItemExit.Size = new System.Drawing.Size(251, 30);
             this.toolStripMenuItemExit.Text = "Exit";
             this.toolStripMenuItemExit.Click += new System.EventHandler(this.toolStripMenuItemExit_Click);
             // 
             // FormTimeController
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(227, 131);
+            this.ClientSize = new System.Drawing.Size(340, 196);
             this.Controls.Add(this.buttonStart);
             this.Controls.Add(this.checkBoxAutoLock);
             this.Controls.Add(this.textBoxMainText);
@@ -187,6 +196,7 @@
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.labelInterval);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormTimeController";
