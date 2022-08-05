@@ -27,7 +27,6 @@
             this.labelInterval = new System.Windows.Forms.Label();
             this.labelTitle = new System.Windows.Forms.Label();
             this.labelMainText = new System.Windows.Forms.Label();
-            this.domainUpDownInterval = new System.Windows.Forms.DomainUpDown();
             this.textBoxTitle = new System.Windows.Forms.TextBox();
             this.textBoxMainText = new System.Windows.Forms.TextBox();
             this.checkBoxAutoLock = new System.Windows.Forms.CheckBox();
@@ -39,7 +38,9 @@
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItemPutOff = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.contextMenuStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelInterval
@@ -74,16 +75,6 @@
             this.labelMainText.Size = new System.Drawing.Size(96, 28);
             this.labelMainText.TabIndex = 2;
             this.labelMainText.Text = "提醒内容";
-            // 
-            // domainUpDownInterval
-            // 
-            this.domainUpDownInterval.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.domainUpDownInterval.Location = new System.Drawing.Point(246, 12);
-            this.domainUpDownInterval.Margin = new System.Windows.Forms.Padding(4);
-            this.domainUpDownInterval.Name = "domainUpDownInterval";
-            this.domainUpDownInterval.Size = new System.Drawing.Size(84, 29);
-            this.domainUpDownInterval.TabIndex = 3;
-            this.domainUpDownInterval.Text = "45";
             // 
             // textBoxTitle
             // 
@@ -147,7 +138,7 @@
             this.toolStripMenuItemPutOff,
             this.toolStripMenuItemExit});
             this.contextMenuStrip.Name = "contextMenuStrip";
-            this.contextMenuStrip.Size = new System.Drawing.Size(252, 130);
+            this.contextMenuStrip.Size = new System.Drawing.Size(252, 163);
             // 
             // toolStripMenuItemLastTimeTitle
             // 
@@ -182,16 +173,29 @@
             this.toolStripMenuItemExit.Text = "Exit";
             this.toolStripMenuItemExit.Click += new System.EventHandler(this.toolStripMenuItemExit_Click);
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.numericUpDown1.Location = new System.Drawing.Point(218, 13);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(110, 31);
+            this.numericUpDown1.TabIndex = 8;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            40,
+            0,
+            0,
+            0});
+            // 
             // FormTimeController
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(340, 196);
+            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.buttonStart);
             this.Controls.Add(this.checkBoxAutoLock);
             this.Controls.Add(this.textBoxMainText);
             this.Controls.Add(this.textBoxTitle);
-            this.Controls.Add(this.domainUpDownInterval);
             this.Controls.Add(this.labelMainText);
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.labelInterval);
@@ -205,6 +209,7 @@
             this.Text = "TimeController";
             this.TopMost = true;
             this.contextMenuStrip.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -215,7 +220,6 @@
         private System.Windows.Forms.Label labelInterval;
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.Label labelMainText;
-        private System.Windows.Forms.DomainUpDown domainUpDownInterval;
         private System.Windows.Forms.TextBox textBoxTitle;
         private System.Windows.Forms.TextBox textBoxMainText;
         private System.Windows.Forms.CheckBox checkBoxAutoLock;
@@ -227,6 +231,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemPutOff;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemExit;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }
 

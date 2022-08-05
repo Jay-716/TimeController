@@ -14,23 +14,23 @@ namespace TimeController {
 
         public FormTimeController() {
             InitializeComponent();
-            this.NextTime = DateTime.Now.AddMinutes(Convert.ToDouble(this.domainUpDownInterval.Text));
-            this.Timer.Interval = Convert.ToDouble(this.domainUpDownInterval.Text);
+            this.NextTime = DateTime.Now.AddMinutes(Convert.ToDouble(this.numericUpDown1.Value));
+            this.Timer.Interval = Convert.ToDouble(this.numericUpDown1.Value);
             this.Timer.Interval = 1000;
             this.Timer.Elapsed += Timer_Tick;
         }
 
         private void buttonStart_Click(object sender, EventArgs e) {
-            this.NextTime = DateTime.Now.AddMinutes(Convert.ToDouble(this.domainUpDownInterval.Text));
-            if(Convert.ToDouble(this.domainUpDownInterval.Text) <= 0) {
+            this.NextTime = DateTime.Now.AddMinutes(Convert.ToDouble(this.numericUpDown1.Value));
+            if(Convert.ToDouble(this.numericUpDown1.Value) <= 0) {
                 MessageBox.Show("Invalid Time", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.domainUpDownInterval.Text = "45";
+                this.numericUpDown1.Value = 40;
             }
             this.notifyIcon.Icon = SystemIcons.Warning;
             this.notifyIcon.BalloonTipTitle = this.textBoxTitle.Text;
             this.notifyIcon.BalloonTipText = this.textBoxMainText.Text;
             this.notifyIcon.Visible = true;
-            this.Interval = Convert.ToDouble(this.domainUpDownInterval.Text);
+            this.Interval = Convert.ToDouble(this.numericUpDown1.Value);
             this.AutoLock = this.checkBoxAutoLock.Checked;
             this.Timer.Enabled = true;
             base.Visible = false;
